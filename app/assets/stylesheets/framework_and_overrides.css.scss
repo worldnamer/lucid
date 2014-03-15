@@ -7,6 +7,8 @@ $cp_dark_blue: #3d6176;
 
 @import "bootstrap";
 
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -39,6 +41,23 @@ img {
 
 body {
   background-color: $cp_dark_gray;
+}
+
+.intro {
+  font-family: 'Calligraffitti', cursive;
+  top: 20px;
+  position: relative;
+  background-color: $cp_sky_blue;
+  border: 1px solid $cp_dark_blue;
+}
+
+a {
+  &:link {
+    color: $cp_sky_blue;
+  }
+  &:visited {
+    color: $cp_dark_blue;
+  }
 }
 
 .navbar-default {
