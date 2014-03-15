@@ -1,4 +1,10 @@
 // import the CSS framework
+$cp_blue_gray: #a9bcc2;
+$cp_gray: #cbd4d6;
+$cp_sky_blue: #def1f3;
+$cp_dark_gray: #798a9b;
+$cp_dark_blue: #3d6176;
+
 @import "bootstrap";
 
 // make all images responsive by default
@@ -30,11 +36,20 @@ img {
   @extend .btn-primary;
   @extend .btn-lg;
   }
+
+body {
+  background-color: $cp_dark_gray;
+}
+
+.navbar-default {
+  background-color: $cp_gray;
+  border-color: $cp_dark_gray;
+}
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
+  background-color: $cp_blue_gray;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
